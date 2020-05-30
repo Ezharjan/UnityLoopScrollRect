@@ -36,9 +36,7 @@ Demo without mask. As you can see, the cells are only instantiated when needed a
 - Supports reverse direction
 - **Supports ScrollBar** (this doesn't work in Infinite mode, and may behavior strange for cells with different size)
 
-Also, I modified [Easy Object Pool](https://www.assetstore.unity3d.com/cn/#!/content/31928) for recycling the cells.
 
-My scripts copies `ScrollRect` from [UGUI](https://bitbucket.org/Unity-Technologies/ui) rather than inherit `ScrollRect` like InfinityScroll. I need to modify some private variants to make dragging smooth. All my codes is wrapped with comments like `==========LoopScrollRect==========`, making maintaining a little easier.
 
 ### Infinite Version
 
@@ -76,6 +74,6 @@ You can also remove EasyObjPool and use your pool instead.
 
 ![LoopVerticalScrollRect](Images/LoopVerticalScrollRect.png)
 
-If you need scroll from top or left, setting content's pivot to 1 and disable ReverseDirection. Otherwise, you should set 0 to pivot and enable ReverseDirection (I have made `VerticalScroll_Reverse` in the demo scene as reference).
+If you need scroll from top or left, setting content's pivot to 1 and disable ReverseDirection. Otherwise, you should set 0 to pivot and enable ReverseDirection.
 
 More details can be found in the demo scene.
